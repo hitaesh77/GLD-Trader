@@ -1,0 +1,13 @@
+alpaca-trade-api==3.0.0
+yfinance==0.2.18
+newsapi-python==0.2.7
+transformers==4.30.0
+torch==2.0.1
+vaderSentiment==3.3.2
+pandas==2.0.3
+numpy==1.24.3
+matplotlib==3.7.1
+streamlit==1.24.0
+schedule==1.2.0
+python-dotenv==1.0.0
+backtrader==1.9.78.123
