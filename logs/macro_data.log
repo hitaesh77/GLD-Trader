@@ -1,0 +1,66 @@
+2025-07-14 10:59:40,332 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 10:59:40,736 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 10:59:40,736 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 10:59:40,892 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 10:59:40,892 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 10:59:41,019 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 10:59:41,019 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 10:59:41,197 [INFO] Fetched 21 rows for GDP
+2025-07-14 10:59:41,197 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 10:59:44,891 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 10:59:44,911 [ERROR] Macro data ingestion failed: Not allowed to merge between different levels. (1 levels on the left, 2 on the right)
+2025-07-14 11:01:07,041 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:01:07,487 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 11:01:07,487 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 11:01:07,623 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 11:01:07,623 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:01:07,925 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 11:01:07,925 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 11:01:08,236 [INFO] Fetched 21 rows for GDP
+2025-07-14 11:01:08,236 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 11:01:08,664 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 11:01:08,668 [ERROR] Macro data ingestion failed: Not allowed to merge between different levels. (1 levels on the left, 2 on the right)
+2025-07-14 11:03:19,914 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:03:20,246 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 11:03:20,246 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 11:03:20,497 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 11:03:20,497 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:03:20,705 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 11:03:20,705 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 11:03:20,940 [INFO] Fetched 21 rows for GDP
+2025-07-14 11:03:20,942 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 11:03:21,240 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 11:03:21,271 [INFO] Saved macro data to data/macro_data.csv
+2025-07-14 11:04:52,193 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:04:52,562 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 11:04:52,562 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 11:04:52,706 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 11:04:52,706 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:04:52,823 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 11:04:52,823 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 11:04:52,960 [INFO] Fetched 21 rows for GDP
+2025-07-14 11:04:52,960 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 11:04:53,248 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 11:04:53,255 [ERROR] Macro data ingestion failed: Must specify a fill 'value' or 'method'.
+2025-07-14 11:05:13,129 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:13,529 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 11:05:13,529 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:13,662 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 11:05:13,662 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:13,776 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 11:05:13,776 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:13,904 [INFO] Fetched 21 rows for GDP
+2025-07-14 11:05:13,904 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:15,494 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 11:05:15,502 [INFO] Saved macro data to data/macro_data.csv
+2025-07-14 11:05:40,967 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:41,560 [INFO] Fetched 1437 rows for DTWEXBGS
+2025-07-14 11:05:41,560 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:41,886 [INFO] Fetched 65 rows for CPIAUCSL
+2025-07-14 11:05:41,886 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:42,175 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-14 11:05:42,175 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:42,610 [INFO] Fetched 21 rows for GDP
+2025-07-14 11:05:42,610 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-14 11:05:43,500 [INFO] Fetched 1388 rows of oil prices
+2025-07-14 11:05:43,516 [INFO] Saved macro data to data/macro_data.csv
