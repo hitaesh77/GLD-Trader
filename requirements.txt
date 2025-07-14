@@ -12,3 +12,4 @@ schedule==1.2.0
 python-dotenv==1.0.0
 backtrader==1.9.78.123
 fredapi==0.5
+nltk==3.8.1
