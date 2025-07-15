@@ -3,7 +3,7 @@ import os
 import argparse
 from dotenv import load_dotenv
 from newsapi import NewsApiClient
-from newsapi.newsapi_exception import NewsAPIException
+from newsapi import NewsAPIException
 from datetime import datetime, timedelta
 import pandas as pd
 
