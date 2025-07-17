@@ -71,9 +71,53 @@ def merge_macro_data(start=start_date, end=end_date):
 
     return df
 
+def clean_data(df):
+    """
+    Clean macro data by forward-filling monthly series and handling missing values.
+    
+    Args:
+        df: DataFrame with macro data including daily and monthly series
+    
+    Returns:
+        DataFrame with cleaned data
+    """
+    df_clean = df.copy()
+
+    df_clean['date'] = pd.to_datetime(df_clean['date'])
+    
+    df_clean = df_clean.sort_values('date').reset_index(drop=True)
+
+    not_daily_columns = ['CPIAUCSL', 'FEDFUNDS']
+    
+    for col in not_daily_columns:
+        if col in df_clean.columns:
+            df_clean[col] = df_clean[col].ffill()
+            logging.info(f"Forward-filled {col} - monthly series")
+
+    if 'GDP' in df_clean.columns:
+        df_clean['GDP'] = df_clean['GDP'].ffill()
+        logging.info("Forward-filled GDP - quarterly series")
+    
+    daily_columns = ['DTWEXBGS', 'OIL_PRICE']
+    
+    for col in daily_columns:
+        if col in df_clean.columns:
+            df_clean[col] = df_clean[col].ffill()
+            logging.info(f"Forward-filled {col} - daily series")
+    
+    logging.info("Data cleaning summary:")
+    for col in df_clean.columns:
+        if col != 'date':
+            null_count = df_clean[col].isnull().sum()
+            total_count = len(df_clean)
+            logging.info(f"{col}: {null_count}/{total_count} null values remaining")
+    
+    return df_clean
+
 if __name__ == "__main__":
     try:
         macro_df = merge_macro_data()
+        macro_df = clean_data(macro_df)
         macro_df.to_csv('data/macro_data.csv', index=False)
         logging.info("Saved macro data to data/macro_data.csv")
     except Exception as e:
