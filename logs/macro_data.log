@@ -64,3 +64,80 @@
 2025-07-14 11:05:42,610 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
 2025-07-14 11:05:43,500 [INFO] Fetched 1388 rows of oil prices
 2025-07-14 11:05:43,516 [INFO] Saved macro data to data/macro_data.csv
+2025-07-17 16:54:29,111 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:54:31,301 [INFO] Fetched 1442 rows for DTWEXBGS
+2025-07-17 16:54:31,301 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-17 16:54:31,877 [INFO] Fetched 66 rows for CPIAUCSL
+2025-07-17 16:54:31,877 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:54:32,274 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-17 16:54:32,274 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-17 16:54:33,402 [INFO] Fetched 21 rows for GDP
+2025-07-17 16:54:33,402 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-17 16:54:38,969 [INFO] Fetched 1388 rows of oil prices
+2025-07-17 16:54:38,979 [INFO] Saved macro data to data/macro_data.csv
+2025-07-17 16:55:16,056 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:55:17,864 [INFO] Fetched 1442 rows for DTWEXBGS
+2025-07-17 16:55:17,864 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-17 16:55:18,266 [INFO] Fetched 66 rows for CPIAUCSL
+2025-07-17 16:55:18,266 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:55:18,753 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-17 16:55:18,753 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-17 16:55:19,166 [INFO] Fetched 21 rows for GDP
+2025-07-17 16:55:19,166 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-17 16:55:20,093 [INFO] Fetched 1388 rows of oil prices
+2025-07-17 16:55:20,103 [INFO] Forward-filled CPIAUCSL - monthly series
+2025-07-17 16:55:20,103 [INFO] Forward-filled FEDFUNDS - monthly series
+2025-07-17 16:55:20,103 [INFO] Forward-filled GDP - quarterly series
+2025-07-17 16:55:20,103 [INFO] Forward-filled DTWEXBGS - daily series
+2025-07-17 16:55:20,103 [INFO] Forward-filled OIL_PRICE - daily series
+2025-07-17 16:55:20,103 [INFO] Data cleaning summary:
+2025-07-17 16:55:20,103 [INFO] DTWEXBGS: 1/1461 null values remaining
+2025-07-17 16:55:20,103 [INFO] CPIAUCSL: 0/1461 null values remaining
+2025-07-17 16:55:20,103 [INFO] FEDFUNDS: 0/1461 null values remaining
+2025-07-17 16:55:20,103 [INFO] GDP: 0/1461 null values remaining
+2025-07-17 16:55:20,103 [INFO] OIL_PRICE: 1/1461 null values remaining
+2025-07-17 16:55:20,103 [ERROR] Macro data ingestion failed: 'NoneType' object has no attribute 'to_csv'
+2025-07-17 16:56:19,810 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:20,817 [INFO] Fetched 1442 rows for DTWEXBGS
+2025-07-17 16:56:20,817 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:21,064 [INFO] Fetched 66 rows for CPIAUCSL
+2025-07-17 16:56:21,064 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:21,249 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-17 16:56:21,249 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:21,443 [INFO] Fetched 21 rows for GDP
+2025-07-17 16:56:21,443 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:22,436 [INFO] Fetched 1388 rows of oil prices
+2025-07-17 16:56:22,447 [INFO] Forward-filled CPIAUCSL - monthly series
+2025-07-17 16:56:22,447 [INFO] Forward-filled FEDFUNDS - monthly series
+2025-07-17 16:56:22,447 [INFO] Forward-filled GDP - quarterly series
+2025-07-17 16:56:22,447 [INFO] Forward-filled DTWEXBGS - daily series
+2025-07-17 16:56:22,447 [INFO] Forward-filled OIL_PRICE - daily series
+2025-07-17 16:56:22,447 [INFO] Data cleaning summary:
+2025-07-17 16:56:22,449 [INFO] DTWEXBGS: 1/1461 null values remaining
+2025-07-17 16:56:22,449 [INFO] CPIAUCSL: 0/1461 null values remaining
+2025-07-17 16:56:22,449 [INFO] FEDFUNDS: 0/1461 null values remaining
+2025-07-17 16:56:22,449 [INFO] GDP: 0/1461 null values remaining
+2025-07-17 16:56:22,449 [INFO] OIL_PRICE: 1/1461 null values remaining
+2025-07-17 16:56:22,449 [ERROR] Macro data ingestion failed: 'NoneType' object has no attribute 'to_csv'
+2025-07-17 16:56:55,816 [INFO] Fetching DTWEXBGS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:57,256 [INFO] Fetched 1442 rows for DTWEXBGS
+2025-07-17 16:56:57,256 [INFO] Fetching CPIAUCSL data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:57,459 [INFO] Fetched 66 rows for CPIAUCSL
+2025-07-17 16:56:57,459 [INFO] Fetching FEDFUNDS data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:57,657 [INFO] Fetched 66 rows for FEDFUNDS
+2025-07-17 16:56:57,657 [INFO] Fetching GDP data from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:57,848 [INFO] Fetched 21 rows for GDP
+2025-07-17 16:56:57,848 [INFO] Fetching oil prices (CL=F) from 2020-01-01 to 2025-07-10
+2025-07-17 16:56:58,694 [INFO] Fetched 1388 rows of oil prices
+2025-07-17 16:56:58,707 [INFO] Forward-filled CPIAUCSL - monthly series
+2025-07-17 16:56:58,707 [INFO] Forward-filled FEDFUNDS - monthly series
+2025-07-17 16:56:58,707 [INFO] Forward-filled GDP - quarterly series
+2025-07-17 16:56:58,707 [INFO] Forward-filled DTWEXBGS - daily series
+2025-07-17 16:56:58,707 [INFO] Forward-filled OIL_PRICE - daily series
+2025-07-17 16:56:58,707 [INFO] Data cleaning summary:
+2025-07-17 16:56:58,707 [INFO] DTWEXBGS: 1/1461 null values remaining
+2025-07-17 16:56:58,710 [INFO] CPIAUCSL: 0/1461 null values remaining
+2025-07-17 16:56:58,710 [INFO] FEDFUNDS: 0/1461 null values remaining
+2025-07-17 16:56:58,710 [INFO] GDP: 0/1461 null values remaining
+2025-07-17 16:56:58,711 [INFO] OIL_PRICE: 1/1461 null values remaining
+2025-07-17 16:56:58,717 [INFO] Saved macro data to data/macro_data.csv
