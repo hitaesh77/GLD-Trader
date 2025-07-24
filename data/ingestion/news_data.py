@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 import argparse
@@ -8,6 +9,8 @@ import os
 from dotenv import load_dotenv
 import time
 import json
+
+from transformers import BertTokenizer, BertForSequenceClassification
 
 # Load environment variables
 load_dotenv()
@@ -341,6 +344,56 @@ def backfill_historical_data(start_date='2024-04-01'):
     else:
         print("No historical headlines found")
         return pd.DataFrame()
+    
+def finbert_sentiment_analysis(csv_path: str):
+    finbert = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-tone', num_labels=3)
+    tokenizer = BertTokenizer.from_pretrained('yiyanghkust/finbert-tone')
+    labels_map = {0: 'negative', 1: 'neutral', 2: 'positive'}
+
+    df = pd.read_csv(csv_path, encoding='utf-8')
+    sentiment_results = []
+
+    for _, row in df.iterrows():
+        headline_texts = [h.strip() for h in str(row['headlines']).split('/') if h.strip()]
+        sentiments = []
+
+        for text in headline_texts:
+            inputs = tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
+            outputs = finbert(**inputs)
+            pred = outputs.logits.argmax(dim=1).item()
+            sentiments.append(labels_map[pred])
+
+        sentiment_results.append(" / ".join(sentiments))
+
+    df['sentiments'] = sentiment_results
+
+    # Generate output file path
+    base_name = os.path.basename(csv_path)
+    name_part = os.path.splitext(base_name)[0]
+    output_file = f"finbert_{name_part}.csv"
+
+    df.to_csv(output_file, index=False)
+    print(f"FinBERT sentiment output written to {output_file}")
+
+
+# New function to compute average sentiment score only
+def compute_avg_sentiment_only(csv_path: str):
+    df = pd.read_csv(csv_path, encoding='utf-8')
+    avg_sentiment_scores = []
+
+    sentiment_to_score = {'negative': -1, 'neutral': 0, 'positive': 1}
+
+    for sentiments in df['sentiments']:
+        labels = [s.strip() for s in str(sentiments).split('/') if s.strip()]
+        scores = [sentiment_to_score.get(s, 0) for s in labels]
+        avg_score = sum(scores) / len(scores) if scores else 0
+        avg_sentiment_scores.append(avg_score)
+
+    df['avg_sentiment_score'] = avg_sentiment_scores
+    df.to_csv(csv_path, index=False)
+    print(f"Appended avg_sentiment_score to {csv_path}")
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Clean gold data files and fetch recent news")
@@ -360,8 +413,11 @@ def main():
                        default="2024-04-01",
                        help="Start date for historical data collection (YYYY-MM-DD)")
     
-    args = parser.parse_args()
     
+    args = parser.parse_args()
+    # finbert_sentiment_analysis("/Users/akhilkagithapu/Downloads/GLD-Trader/data/gold_news.csv")
+    compute_avg_sentiment_only("finbert_gold_news.csv")
+    return
     # Clean the final_gold_data.csv file (default action)
     if not args.backfill and not args.daily:
         print("Starting gold data cleaning...")
