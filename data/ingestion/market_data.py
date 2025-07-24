@@ -65,5 +65,6 @@ if __name__ == "__main__":
     df = calculate_macd(df, 12, 26, 9)
     df = compute_bollinger_bands(df, 20, 2)
     df = compute_momentum(df, 10)
+    df = df.dropna()
     df.to_csv("data/gld_daily.csv")
-    df.dropna()
+    
