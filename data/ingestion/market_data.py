@@ -66,5 +66,7 @@ if __name__ == "__main__":
     df = compute_bollinger_bands(df, 20, 2)
     df = compute_momentum(df, 10)
     df = df.dropna()
+    df.index = df.index.date
+    df.index.name = "date"
     df.to_csv("data/gld_daily.csv")
     
