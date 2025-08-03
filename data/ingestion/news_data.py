@@ -416,7 +416,7 @@ def main():
     
     args = parser.parse_args()
     # finbert_sentiment_analysis("/Users/akhilkagithapu/Downloads/GLD-Trader/data/gold_news.csv")
-    compute_avg_sentiment_only("finbert_gold_news.csv")
+    compute_avg_sentiment_only("data/finbert_gold_news.csv")
     return
     # Clean the final_gold_data.csv file (default action)
     if not args.backfill and not args.daily:

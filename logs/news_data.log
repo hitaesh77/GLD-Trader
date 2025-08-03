@@ -1,0 +1,28 @@
+2025-07-28 13:49:31,095 [INFO] Starting RSS fetch for query 'GLD OR Gold ETF' from 2020-01-01 to 2025-07-10
+2025-07-28 13:49:32,116 [INFO] Collected 76 filtered articles after limiting to 10 per day
+2025-07-28 13:49:32,134 [INFO] Saved 76 articles to data/rss_news.csv
+2025-07-28 13:52:40,026 [INFO] Starting RSS fetch for query '(gold OR "gold price" OR "gold market" OR "gold futures" OR "gold investing" OR inflation OR "safe haven") AND (stocks OR market OR S&P OR recession OR "interest rates")' from 2020-01-01 to 2025-07-10
+2025-07-28 13:52:41,145 [INFO] Collected 23 filtered articles after limiting to 10 per day
+2025-07-28 13:52:41,170 [INFO] Saved 23 articles to data/rss_news.csv
+2025-07-28 13:54:05,763 [INFO] Starting RSS fetch for query '(gold OR "gold price" OR "gold market" OR "gold futures" OR "gold investing" OR inflation OR "safe haven") OR (stocks OR market OR S&P OR recession OR "interest rates")' from 2020-01-01 to 2025-07-10
+2025-07-28 13:54:07,098 [INFO] Collected 0 filtered articles after limiting to 10 per day
+2025-07-28 13:56:29,913 [INFO] Starting RSS fetch for query 'gold OR "gold price" OR GLD OR Gold ETF OR inflation OR recession OR "interest rates" OR "safe haven" OR "gold market" OR "gold futures" OR "gold investing" OR stocks OR market OR S&P' from 2020-01-01 to 2025-07-10
+2025-07-28 13:56:30,996 [INFO] Collected 36 filtered articles after limiting to 10 per day
+2025-07-28 13:56:30,996 [INFO] Saved 36 articles to data/rss_news.csv
+2025-07-28 13:56:52,650 [INFO] Starting RSS fetch for query 'gold OR "gold price" OR GLD OR Gold ETF OR inflation OR recession OR "interest rates" OR "safe haven" OR "gold market" OR "gold futures" OR "gold investing" OR stocks OR market OR S&P' from 2020-01-01 to 2025-07-10
+2025-07-28 13:56:53,106 [INFO] Collected 36 filtered articles after limiting to 10 per day
+2025-07-28 13:56:53,109 [INFO] Saved 36 articles to data/rss_news.csv
+2025-07-28 13:57:14,285 [INFO] Starting RSS fetch for query 'GLD OR Gold ETF' from 2020-01-01 to 2025-07-10
+2025-07-28 13:57:15,184 [INFO] Collected 76 filtered articles after limiting to 10 per day
+2025-07-28 13:57:15,184 [INFO] Saved 76 articles to data/rss_news.csv
+2025-07-28 14:00:28,646 [INFO] Starting RSS fetch for query 'GLD OR Gold ETF' from 2020-01-01 to 2025-07-28
+2025-07-28 14:00:29,584 [INFO] Collected 99 filtered articles after limiting to 10 per day
+2025-07-28 14:00:29,600 [INFO] Saved 99 articles to data/rss_news.csv
+2025-07-28 14:13:56,239 [INFO] Fetching articles from 2020-01-01 to 2025-07-10
+2025-07-28 14:13:56,239 [INFO] Fetching page 1
+2025-07-28 14:13:56,596 [WARNING] Attempt 1 failed: {'status': 'error', 'code': 'rateLimited', 'message': 'You have made too many requests recently. Developer accounts are limited to 100 requests over a 24 hour period (50 requests available every 12 hours). Please upgrade to a paid plan if you need more requests.'}
+2025-07-28 14:13:58,781 [WARNING] Attempt 2 failed: {'status': 'error', 'code': 'rateLimited', 'message': 'You have made too many requests recently. Developer accounts are limited to 100 requests over a 24 hour period (50 requests available every 12 hours). Please upgrade to a paid plan if you need more requests.'}
+2025-07-28 14:14:00,955 [WARNING] Attempt 3 failed: {'status': 'error', 'code': 'rateLimited', 'message': 'You have made too many requests recently. Developer accounts are limited to 100 requests over a 24 hour period (50 requests available every 12 hours). Please upgrade to a paid plan if you need more requests.'}
+2025-07-28 14:14:02,956 [ERROR] All retries failed for API call.
+2025-07-28 14:14:02,956 [INFO] No more articles returned by API.
+2025-07-28 14:14:02,956 [INFO] Finished fetching. Total articles: 0
