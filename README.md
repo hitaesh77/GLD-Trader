@@ -76,6 +76,12 @@ The model uses 20+ features including:
 - StandardScaler normalization for LSTM features
 - Residual-based ensemble approach for improved accuracy
 
+
+## In Progress
+
+Currently adding trading logic, integrating with Alpaca, and sourcing better news data.
+
+
 ## Usage
 
 1. Run data ingestion scripts in `data/ingestion/`
