@@ -1,6 +1,5 @@
 import yfinance as yf
 import pandas as pd
-from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 def fetch_data(start, end):
     dat = yf.Ticker("GLD")
