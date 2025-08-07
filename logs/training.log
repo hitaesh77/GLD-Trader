@@ -1,0 +1,38 @@
+2025-08-07 10:51:06,650 - INFO - Starting full training pipeline...
+2025-08-07 10:51:34,508 - INFO - Starting full training pipeline...
+2025-08-07 10:51:34,577 - INFO - Training SARIMAX model...
+2025-08-07 10:51:35,067 - INFO - SARIMAX model training completed successfully
+2025-08-07 10:51:35,092 - INFO - Training LSTM model...
+2025-08-07 10:51:40,686 - INFO - Epoch 0100 — Train RMSE: 0.5293, Test RMSE: 2.0018
+2025-08-07 10:51:42,688 - INFO - Epoch 0200 — Train RMSE: 0.5334, Test RMSE: 2.0009
+2025-08-07 10:51:44,759 - INFO - Epoch 0300 — Train RMSE: 0.5295, Test RMSE: 2.0009
+2025-08-07 10:51:46,830 - INFO - Epoch 0400 — Train RMSE: 0.5353, Test RMSE: 2.0009
+2025-08-07 10:51:48,960 - INFO - Epoch 0500 — Train RMSE: 0.5369, Test RMSE: 2.0009
+2025-08-07 10:51:50,856 - INFO - Epoch 0600 — Train RMSE: 0.5280, Test RMSE: 2.0009
+2025-08-07 10:51:53,189 - INFO - Epoch 0700 — Train RMSE: 0.5447, Test RMSE: 2.0009
+2025-08-07 10:51:55,299 - INFO - Epoch 0800 — Train RMSE: 0.5318, Test RMSE: 2.0009
+2025-08-07 10:51:57,257 - INFO - Epoch 0900 — Train RMSE: 0.5464, Test RMSE: 2.0009
+2025-08-07 10:51:59,255 - INFO - Epoch 1000 — Train RMSE: 0.5732, Test RMSE: 2.0009
+2025-08-07 10:51:59,255 - INFO - LSTM model training completed successfully
+2025-08-07 10:51:59,255 - INFO - Full training pipeline completed successfully
+2025-08-07 10:51:59,255 - INFO - Saving models...
+2025-08-07 10:56:37,605 - INFO - Starting full training pipeline...
+2025-08-07 10:56:37,616 - INFO - Training SARIMAX model...
+2025-08-07 10:56:38,011 - INFO - SARIMAX model training completed successfully
+2025-08-07 10:56:38,027 - INFO - Training LSTM model...
+2025-08-07 10:56:41,996 - INFO - Epoch 0100 — Train RMSE: 0.5298, Test RMSE: 1.9543
+2025-08-07 10:56:43,968 - INFO - Epoch 0200 — Train RMSE: 0.5150, Test RMSE: 1.9263
+2025-08-07 10:56:45,949 - INFO - Epoch 0300 — Train RMSE: 0.5220, Test RMSE: 1.9251
+2025-08-07 10:56:47,923 - INFO - Epoch 0400 — Train RMSE: 0.5193, Test RMSE: 1.9251
+2025-08-07 10:56:49,762 - INFO - Epoch 0500 — Train RMSE: 0.5213, Test RMSE: 1.9251
+2025-08-07 10:56:51,571 - INFO - Epoch 0600 — Train RMSE: 0.5133, Test RMSE: 1.9251
+2025-08-07 10:56:53,597 - INFO - Epoch 0700 — Train RMSE: 0.5187, Test RMSE: 1.9251
+2025-08-07 10:56:55,566 - INFO - Epoch 0800 — Train RMSE: 0.5194, Test RMSE: 1.9251
+2025-08-07 10:56:57,333 - INFO - Epoch 0900 — Train RMSE: 0.5210, Test RMSE: 1.9251
+2025-08-07 10:56:59,207 - INFO - Epoch 1000 — Train RMSE: 0.5129, Test RMSE: 1.9251
+2025-08-07 10:56:59,207 - INFO - LSTM model training completed successfully
+2025-08-07 10:56:59,207 - INFO - Full training pipeline completed successfully
+2025-08-07 10:56:59,207 - INFO - Saving models...
+2025-08-07 10:56:59,262 - INFO - Models saved to trained_models
+2025-08-07 11:08:30,476 - INFO - Loading models...
+2025-08-07 11:08:30,537 - INFO - Models loaded successfully

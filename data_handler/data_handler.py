@@ -1,15 +1,10 @@
-# data_handler.py
-"""
-Data handling and preprocessing module for GLD ETF Trading Bot
-"""
-
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pickle
 import os
-from config import *
+from config.config import *
 
 class DataHandler:
     def __init__(self):
@@ -18,26 +13,25 @@ class DataHandler:
             'y_scaler': None
         }
     
-    def load_data(self, filepath=None):
-        """Load data from CSV file"""
-        if filepath is None:
-            filepath = COMBINED_DATA_FILE
+    def load_data(self):
+        filepath = "data_in/combined_data.csv"
         
         try:
             df = pd.read_csv(filepath, index_col="date", parse_dates=True)
             df = df.dropna()
             return df
+        
         except Exception as e:
             raise Exception(f"Error loading data from {filepath}: {str(e)}")
     
     def split_data(self, df, target_col=TARGET_COLUMN, exog_cols=EXOG_COLUMNS):
-        """Split data into ARIMA train, LSTM train, and test sets"""
-        # First split: ARIMA training vs remaining
+
+        # ARIMA training and holdout
         arima_train, holdout = train_test_split(
-            df, test_size=(1 - ARIMA_TRAIN_RATIO), shuffle=False
+            df, test_size=TEST_RATIO, shuffle=False
         )
         
-        # Second split: LSTM training vs test
+        # LSTM training annd test
         lstm_train, test = train_test_split(
             holdout, test_size=TEST_RATIO, shuffle=False
         )
@@ -60,8 +54,9 @@ class DataHandler:
             'final_test': (y_fin_test, x_fin_test)
         }
     
+    # TO READ
+    
     def prepare_lstm_data(self, residuals, dates, window_size=LSTM_WINDOW_SIZE):
-        """Prepare residual data for LSTM training"""
         df_residuals = pd.DataFrame({
             'date': dates,
             'residuals': residuals
@@ -133,7 +128,7 @@ class DataHandler:
     def save_scalers(self, filepath=None):
         """Save scalers to file"""
         if filepath is None:
-            filepath = os.path.join(MODEL_DIR, "scalers.pkl")
+            filepath = os.path.join("trained_models", "scalers.pkl")
         
         with open(filepath, 'wb') as f:
             pickle.dump(self.scalers, f)
@@ -141,7 +136,7 @@ class DataHandler:
     def load_scalers(self, filepath=None):
         """Load scalers from file"""
         if filepath is None:
-            filepath = os.path.join(MODEL_DIR, "scalers.pkl")
+            filepath = os.path.join("trained_models", "scalers.pkl")
         
         try:
             with open(filepath, 'rb') as f:
