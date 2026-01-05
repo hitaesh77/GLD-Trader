@@ -1,6 +1,6 @@
-# GLD-Trader
+# GLD-Forecastor
 
-An algorithmic trading model for GLD ETF using hybrid ARIMA-LSTM architecture with multi-source data integration (macro data, stock prices, and news data with FinBERT sentiment analysis)
+An algorithmic price prediction model for GLD ETF using hybrid ARIMA-LSTM architecture with multi-source data integration (macro data, stock prices, and news data with FinBERT sentiment analysis)
 
 ## Model Architecture
 
@@ -79,7 +79,7 @@ The model uses 20+ features including:
 
 ## In Progress
 
-Currently adding trading logic, integrating with Alpaca, and sourcing better news data.
+Currently integrating with Alpaca, and sourcing better news data.
 
 
 ## Usage
