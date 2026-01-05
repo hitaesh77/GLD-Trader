@@ -1,4 +1,4 @@
-# GLD-Forecastor
+# GLD-Forecaster
 
 An algorithmic price prediction model for GLD ETF using hybrid ARIMA-LSTM architecture with multi-source data integration (macro data, stock prices, and news data with FinBERT sentiment analysis)
 
